@@ -1,5 +1,3 @@
-var nupuValue;
-
 function show(elementID) {
     var ele = document.getElementById(elementID);
     if (!ele) {
@@ -14,10 +12,4 @@ function show(elementID) {
 }
 
 
-function foo(nupp){
-    nupuValue = nupp.value;
-    console.log(nupuValue); 
-    }
-
-export { nupuValue };
 

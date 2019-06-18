@@ -1,13 +1,12 @@
-        var myModule = require('index.js');
-        var exportvalue = myModule.nupuValue;
-        console.log(nupuvalue);
+        var result = localStorage.getItem("nupuvalue");
+        console.log(result);
         var scaling = "fit";
         var width = 1600;
         var height = 1200;
         var countPieces = 0;
         var totalPieces = 0;
         var counterL = 0;
-        var imgChoice = nupuvalue;
+        var imgChoice = result;
         var img = imgChoice + ".jpg";
         var a = new Game(); //õhupallide mängu muutuja
         var varviArray = ["blue", "green", "lightblue", "pink", "red", "yellow"]; //Õhupallide värvi array
