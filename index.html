@@ -8,141 +8,138 @@
 <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
 <script type='text/javascript' src='index.js'></script>
 <script type='text/javascript' src='module.js'></script>
-<header id="header">
-        <h3 id="headertext">Eesti puslemäng</h3>
-
-         </header>
+    <h1 id="headertext">Eesti puslemäng</h1>
 </head>
 <body>
     <center>
     <div id="main">
 <!--..............................MAIN MENU.................................-->
         <div id="Page1" class="page" style="">
-           <button onclick="show('Page2');teemaSound('Loomad.mp3')"class="buttoned">Loomad</button>
-          <button onclick="show('Page3');teemaSound('Puuviljad.mp3')"class="buttoned">Puuviljad</button>
-          <button onclick="show('Page4');teemaSound('Koogiviljad.mp3')"class="buttoned">Köögiviljad</button>
-          <button onclick="show('Page5');teemaSound('Manguasjad.mp3')"class="buttoned">Mänguasjad</button>
-          <button onclick="show('Page6');teemaSound('Soiduvahendid.mp3')"class="buttoned">Sõiduvahendid</button>
+          <button onclick="show('Page2')" class="buttoned">Loomad</button>
+          <button onclick="show('Page3')" class="buttoned">Puuviljad</button>
+          <button onclick="show('Page4')"class="buttoned">Köögiviljad</button>
+          <button onclick="show('Page5')"class="buttoned">Mänguasjad</button>
+          <button onclick="show('Page6')"class="buttoned">Sõiduvahendid</button>
         </div>
-        <script>
-          function teemaSound(src){
-            var teemaSoundPlay = new Audio("assets/" + src);
-            teemaSoundPlay.play();
-          }
-        </script>
 <!--..............................LOOMAD.................................-->
         <div id="Page2" class="page" style="display:none">
           <button onclick="show('Page1')" class="buttoned">Menüü</button>
           <h1>Loomad</h1>
-
+          <div class="pops">
           <form action="pusleindex.html">
-            <input type="submit" value="Kass" class="cat buttoned"  onclick="foo(this)"/>
+            <input type="submit" value="Kass" class="icons" style="background-image: url('assets/Kass.jpg')" onclick="foo(this)"/>
           </form>
-
+         
           <form action="pusleindex.html">
-            <input type="submit" value="Hobune" class="horse buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Hobune" class="icons" style="background-image: url('assets/Hobune.jpg')" onclick="foo(this)"/>
            </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Lammas" class="sheep buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Lammas" class="icons" style="background-image: url('assets/Lammas.jpg')" onclick="foo(this)"/>
           </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Koer" class="dog buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Koer" class="icons" style="background-image: url('assets/Koer.jpg')" onclick="foo(this)"/>
           </form>
+          </div>
         </div>
 <!--..............................PUUVILJAD.................................-->
         <div id="Page3" class="page" style="display:none">
           <button onclick="show('Page1')"class="buttoned">Menüü</button>
           <h1>Puuviljad</h1>
-
+          <div class="pops">
         <form action="pusleindex.html">
-          <input type="submit" value="Õun" class="apple buttoned"  onclick="foo(this)"/>
+          <input type="submit" value="Õun" class="icons" style="background-image: url('assets/Õun.jpg')" onclick="foo(this)"/>
         </form>
-
+ 
         <form action="pusleindex.html">
-          <input type="submit" value="Pirn" class="pear buttoned" onclick="foo(this)"/>
+          <input type="submit" value="Pirn" class="icons" style="background-image: url('assets/Pirn.jpg')" onclick="foo(this)"/>
          </form>
-
+ 
         <form action="pusleindex.html">
-          <input type="submit" value="Kirsid" class="cherry buttoned" onclick="foo(this)"/>
+          <input type="submit" value="Kirsid" class="icons" style="background-image: url('assets/Kirsid.jpg')" onclick="foo(this)"/>
         </form>
-
+ 
         <form action="pusleindex.html">
-          <input type="submit" value="Maasikas" class="strawberry buttoned" onclick="foo(this)"/>
+          <input type="submit" value="Maasikas" class="icons" style="background-image: url('assets/Maasikas.jpg')" onclick="foo(this)"/>
         </form>
+        </div>
       </div>
-
+ 
 <!--..............................Köögiviljad.................................-->
         <div id="Page4" class="page" style="display:none">
           <button onclick="show('Page1')"class="buttoned">Menüü</button>
           <h1>Köögiviljad</h1>
-
+          <div class="pops">
           <form action="pusleindex.html">
-            <input type="submit" value="Tomat" class="tomato buttoned"  onclick="foo(this)"/>
+            <input type="submit" value="Tomat" class="icons" style="background-image: url('assets/Tomat.jpg')"  onclick="foo(this)"/>
+ 
           </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Porgand" class="carrot buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Porgand" class="icons" style="background-image: url('assets/Porgand.jpg')" onclick="foo(this)"/>
            </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Paprika" class="paprika buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Paprika" class="icons" style="background-image: url('assets/Paprika.jpg')" onclick="foo(this)"/>
           </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Kurk" class="cucumber buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Kurk" class="icons" style="background-image: url('assets/Kurk.jpg')" onclick="foo(this)"/>
           </form>
+          </div>
         </div>
-
+ 
 <!--..............................MÄNGUASJAD.................................-->
         <div id="Page5" class="page" style="display:none">
           <button onclick="show('Page1')"class="buttoned">Menüü</button>
           <h1>Mänguasjad</h1>
-
+          <div class="pops">
           <form action="pusleindex.html">
-            <input type="submit" value="Robot" class="robot buttoned"  onclick="foo(this)"/>
+            <input type="submit" value="Robot" class="icons" style="background-image: url('assets/Robot.jpg')" onclick="foo(this)"/>
           </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Rannapall" class="ball buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Rannapall" class="icons" style="background-image: url('assets/Rannapall.jpg')" onclick="foo(this)"/>
            </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Lego" class="lego buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Lego" class="icons" style="background-image: url('assets/Lego.jpg')" onclick="foo(this)"/>
           </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Ruubikukuubik" class="cubic buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Ruubikukuubik" class="icons" style="background-image: url('assets/Ruubikukuubik.jpg')" onclick="foo(this)"/>
           </form>
+          </div>
         </div>
-
+ 
 <!--..............................SÕIDUVAHENDID.................................-->
         <div id="Page6" class="page" style="display:none">
           <button onclick="show('Page1')"class="buttoned">Menüü</button>
           <h1>Sõiduvahendid</h1>
-
+          <div class="pops">
           <form action="pusleindex.html">
-            <input type="submit" value="Auto" class="car buttoned"  onclick="foo(this)"/>
+            <input type="submit" value="Auto" class="icons" style="background-image: url('assets/Auto.jpg')"  onclick="foo(this)"/>
           </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Mootorratas" class="bike buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Mootorratas" class="icons" style="background-image: url('assets/Mootorratas.jpg')" onclick="foo(this)"/>
            </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Lennuk" class="plane buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Lennuk" class="icons" style="background-image: url('assets/Lennuk.jpg')" onclick="foo(this)"/>
           </form>
-
+ 
           <form action="pusleindex.html">
-            <input type="submit" value="Rong" class="train buttoned" onclick="foo(this)"/>
+            <input type="submit" value="Rong" class="icons" style="background-image: url('assets/Rong.jpg')" onclick="foo(this)"/>
           </form>
+          </div>
         </div>
-
-
+ 
+ 
     </div>
     </center>
-
-
+ 
+ 
 </body>
 </html>
