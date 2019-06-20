@@ -19,12 +19,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
 
 </head>
-<body style="overflow: hidden;">
-    <div id="canvasDiv"></div>
+<body>
+  <div id="canvasDiv"></div>
     <button onclick="goBack()" class="nupp1">↩     Tagasi</button>
     <script>
         function goBack(){
-        location.replace("http://www.tlu.ee/~mustmark/suvepraktika/index.html")
+        location.replace("index.html")
     }
     </script>
     <div class="audios">
@@ -46,7 +46,6 @@
         src="assets/balloonPop.mp3"
       ></audio>
 
-
     </div>
     <br>
     <div class="onoffswitch">
@@ -66,26 +65,8 @@
 
 <!--     <button id="settings" ><img src=""></button> -->
 
-    <script>
-      function muteSound() {
-        const switcher = document.querySelector("#myonoffswitch");
-        const audios = document.querySelectorAll(".audio");
-        audios.forEach(el => {
-          el.muted = !switcher.checked;
-          //Kui tahta, et kohesel heli uuesti sisselülitamisel ei kõlaks audio osa, mis pola veel läbi saanud. 
-          //Muidu ilma if-ita audio fail käib ka mute peal edasi, kuigi seda ei kuule ning heli mute pealt 
-          //koheselt maha võttes, kuuleb seda edasi.
-          if(el.muted){
-            el.currentTime=10;
-          }
-          
-        });
-      }
-      window.onload = function() {
-        muteSound();
-      };
 
-     </script>
+
      <script type="text/javascript" src ="pusleindex.js"></script>
 </body>
 
