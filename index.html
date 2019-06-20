@@ -18,12 +18,18 @@
     <div id="main">
 <!--..............................MAIN MENU.................................-->
         <div id="Page1" class="page" style="">
-          <button onclick="show('Page2')"class="buttoned">Loomad</button>
-          <button onclick="show('Page3')"class="buttoned">Puuviljad</button>
-          <button onclick="show('Page4')"class="buttoned">Köögiviljad</button>
-          <button onclick="show('Page5')"class="buttoned">Mänguasjad</button>
-          <button onclick="show('Page6')"class="buttoned">Sõiduvahendid</button>
+           <button onclick="show('Page2');teemaSound('Loomad.mp3')"class="buttoned">Loomad</button>
+          <button onclick="show('Page3');teemaSound('Puuviljad.mp3')"class="buttoned">Puuviljad</button>
+          <button onclick="show('Page4');teemaSound('Koogiviljad.mp3')"class="buttoned">Köögiviljad</button>
+          <button onclick="show('Page5');teemaSound('Manguasjad.mp3')"class="buttoned">Mänguasjad</button>
+          <button onclick="show('Page6');teemaSound('Soiduvahendid.mp3')"class="buttoned">Sõiduvahendid</button>
         </div>
+        <script>
+          function teemaSound(src){
+            var teemaSoundPlay = new Audio("assets/" + src);
+            teemaSoundPlay.play();
+          }
+        </script>
 <!--..............................LOOMAD.................................-->
         <div id="Page2" class="page" style="display:none">
           <button onclick="show('Page1')" class="buttoned">Menüü</button>

@@ -1,10 +1,7 @@
 var result = localStorage.getItem("nupuvalue");
-console.log(result);
 var scaling = "fit";
 var width = 1600;
 var height = 1200;
-//var width = 1980;
-//var height = 1080;
 var countPieces = 0;
 var totalPieces = 0;
 var counterL = 0;
@@ -18,10 +15,8 @@ var varviArray = ["blue", "green", "lightblue", "pink", "red", "yellow"]; //Õhu
 // as of ZIM 5.5.0 you do not need to put zim before ZIM functions and classes
 var frame = new Frame(scaling, width, height);
 frame.on("ready", function()
-{
+{   
     zog("ready from ZIM Frame");
-    console.log(imgChoice);
-    console.log(img);
 
     var imgSoundPlay = new Audio("assets/" + imgSound);
     imgSoundPlay.play();
@@ -44,7 +39,7 @@ frame.on("ready", function()
     frame.loadAssets([img], "assets/");
 
     frame.on("complete", function() {
-
+        bgMusic();
 
         imageObj = frame.asset(img).clone();
         imageObj.addTo(con);
@@ -137,7 +132,7 @@ frame.on("ready", function()
                         zog("countPieces",countPieces);
                         if(countPieces == totalPieces)
                         {
-
+                            imgSoundPlay.play();
                             var audio = document.getElementById("puzzleCompleted");
                             audio.volume = 0.1;
                             audio.play();
@@ -375,6 +370,14 @@ function muteSound() {
 
   });
 }
-window.onload = function() {
+
+function bgMusic() {
+        var bgaudio = document.getElementById("bgMusic");
+        bgaudio.volume = "0.05";
+        bgaudio.play();
+        
+      }
+
+/*window.onload = function() {
   muteSound();
-};
+};*/
