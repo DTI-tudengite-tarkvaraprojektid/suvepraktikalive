@@ -53,18 +53,26 @@ body {
 
 .nupp1{
     height: 60px;
-    width: 180px;
+    width: 200px;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: #ffffff;
-    border: 1px solid rgba(22, 76, 167, 0.6);
-    border-radius: 10px;
-    color: #1d89ff;
-    font-weight: 400;
+    background-color: rgb(0,0,0,0.6);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 6px;
+    color: white;
+    font-weight: 1000;
+    /*padding: 0 20px;*/
     font-size: 20px;
-    font-family: inherit;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    transition: 0.5s;
 } 
+
+.nupp1:hover {
+    color: black;
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgb(0, 0, 0, 0.5);
+}
 
 .onoffswitch {
     position: relative; width:50px;

@@ -12,33 +12,45 @@ to {background-position: 500px 0;}
 #main {
   margin-top:5%;
 }
+
+#Page1 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
  
 h1{
   color: #55cf5f;
   text-shadow: 1 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  font-family: 'Indie Flower', cursive;
-  font-size: 32px;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
 }
  
  
 .buttoned{
-  height: 100px;
-  width: 185px;
+  height: 60px;
+  width: 200px;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: #55cf5f;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  color: rgb(10, 13, 68);
+  background-color: rgb(0,0,0,0.6);
+  border-radius: 6px;
+  color: white;
   font-weight: 1000;
   font-size: 20px;
-  font-family: 'B612 Mono', monospace;
-  box-shadow: 0 19px 38px rgba(88, 70, 70, 0.3), 0 15px 12px rgba(0,0,0,0.22);
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
   margin: 10px;
   padding: 0 20px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
   text-align: center;
-  border-radius: 10px;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
+  transition: 0.5s;
+}
+
+.buttoned:hover{
+  color: black;
+  background-color: rgb(255, 255, 255, 0.5);
+  box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.3);
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  /*box-shadow: 0 19px 38px rgba(88, 70, 70, 0.3), 0 15px 12px rgba(0,0,0,0.22);*/
 }
  
 .pops{
@@ -49,18 +61,19 @@ h1{
 }
  
 .icons{
+  font-color: transparent;
   height: 100px;
   width: 185px;
   background-size: 185px  100px;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: #55cf5f;
+  /*background-color: #55cf5f;*/
   border: 1px solid #000000;
   border-radius: 10px;
-  color: rgb(10, 13, 68);
+  color: transparent;
   font-weight: 1000;
-  font-size: 20px;
-  font-family: 'B612 Mono', monospace;
+  font-size: 15px;
+  font-family: font-family: Futura,Trebuchet MS,Arial,sans-serif;
   box-shadow: 0 19px 38px rgba(88, 70, 70, 0.3), 0 15px 12px rgba(0,0,0,0.22);
   margin: 10px;
   padding: 0 20px;
@@ -69,22 +82,13 @@ h1{
   letter-spacing: 1px;
 }
  
-.buttoned:hover{
-  color: blue;
-}
- 
 #headertext{
 color: #55cf5f;
 text-align: center;
-font-family: 'B612 Mono', monospace;
-font-size: 60px;
-width: 100%;
-height: 0%;
+font-family: Futura,Trebuchet MS,Arial,sans-serif;
 letter-spacing: 2px;
 /*position: absolute;*/
 text-align: center;
-top: 0;
-left: 0;
-z-index: 99;
 text-shadow: 0 19px 38px rgba(88, 70, 70, 0.3), 0 15px 12px rgba(0,0,0,0.22);
+font-size: 60px;
 }
