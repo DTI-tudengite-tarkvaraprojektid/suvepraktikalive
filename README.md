@@ -13,5 +13,18 @@ Projekti panustasid: Markus Must, Johanna Maarja Eller, Rait Väiko, Revor Jan N
 
 Kaitstud MIT litsensiga: http://www.opensource.org/licenses/mit-license.php
 
+Paigaldusjuhend 
+
+Lae endale alla rakenduse failid lehel https://github.com/markusmust/suvepraktikalive
+Paremalt roheline nupp download ja seejärel download zip.
+
+Lae endale alla  ka ZAMP lehelt http://zwamp.sourceforge.net/ ja paigalda soovitud kausta.
+
+Otsi üles paigaldatud kaustas "Vdrive" kaust ja sealt kaustast "Web" kaust ja tõsta eelnevalt tõmmatud suvepraktika.zip sinna ja tihenda lahti (võimalik teha tasuta programmi 7zip-iga).
+
+Lõpuks käivitage ZAMP(zamp.exe) ja minge netibrauseris aadressile 
+localhost/suvepraktikalive/index.html.
+
+
 
 
